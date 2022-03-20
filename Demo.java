@@ -3,7 +3,7 @@ public class Demo {
 	public static void main(String[] args) {
 		System.out.println("Main thread is- "
 						+ Thread.currentThread().getName());
-		Thread t1 = new Thread(new RunnableDemo().new RunnableImpl());
+		Thread t1 = new Thread(new Demo().new RunnableImpl());
 		t1.start();
 	}
 
